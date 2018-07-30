@@ -21,7 +21,7 @@ Pseudo code
 
 	f. if size == 1:
 		i. Output "None"
-	g. else:
+	g. else :
 		i. if max == 1:
 			1. Output "None"
 		ii. Else:
