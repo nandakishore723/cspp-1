@@ -1,6 +1,6 @@
 '''
  @author : nandakishore
- In this Program we use while, For loop to get
+ In this Program we use while, loop to get
  output.
 '''
 N = 2
