@@ -17,6 +17,6 @@ the string s.
     for var_v in s_a:
         if var_v in 'aeiou':
             s_b = s_b + 1
-            print(s_b)
+    print(s_b)
 if __name__ == "__main__":
     main()
