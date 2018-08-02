@@ -10,7 +10,7 @@ def main():
     s_a = input()
     s_b = 'bob'
     t_c = 0
-    for m_r in range(len(s_a)):
+    for m_r in range(len(s_a)-2):
         b_c = 0
         n_r = 0
         o_r = m_r
