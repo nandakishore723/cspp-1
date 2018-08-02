@@ -35,4 +35,4 @@ letters occur in alphabetical order.
             temp_s = s_s
     print(temp_s)
 if __name__ == "__main__":
-    main()
+main()
