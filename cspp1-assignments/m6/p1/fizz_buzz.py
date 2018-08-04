@@ -18,7 +18,7 @@ def main():
     		print('Fizz')
     	elif i%5 == 0:
     		print('Buzz')
-    	elif i%15 == 0:
+    	elif i%15== 0:
     		print('FizzBuzz')
     	else:
     		print(i)
