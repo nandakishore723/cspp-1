@@ -18,10 +18,10 @@ def main():
     flag = 0
     for i in range(k):
         if i**3 == cu_a:
-            flag =1
-    if flag == 1 :
+            flag = 1
+    if flag == 1:
         print(cu_a, 'is a perfect cube')
     else:
-        print(cu_a,'is not a perfect cube')
+        print(cu_a, 'is not a perfect cube')
 if __name__ == "__main__":
     main()
