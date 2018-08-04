@@ -14,12 +14,14 @@ def main():
     finding perfect cube or not
     '''
     cu_a = int(input())
-    gu_a = 1
-    while (gu_a**3) < cu_a:
-        gu_a = gu_a + 1
-        if int(gu_a**3) == cu_a:
-            print(cu_a, 'is perfect cube')
-        else:
-            print(cu_a, 'is not perfect cube')
+    k = cu_a//2
+    flag = 0
+    for i in range(k):
+        if i**3 == cu_a:
+            flag =1
+    if flag == 1 :
+        print(cu_a, 'is a perfect cube')
+    else:
+        print(cu_a,'is not a perfect cube')
 if __name__ == "__main__":
     main()
