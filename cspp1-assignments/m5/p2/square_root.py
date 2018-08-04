@@ -22,6 +22,6 @@ def main():
             break
         else:
             guess = guess + step
-            print(str(guess))
+    print(str(guess))
 if __name__ == "__main__":
     main()
