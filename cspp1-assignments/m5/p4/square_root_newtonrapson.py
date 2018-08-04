@@ -18,6 +18,6 @@ def main():
     gu_val = x_num/2.0
     while abs(gu_val*gu_val - x_num) >= epsilon:
         gu_val = gu_val - (((gu_val**2) - x_num)/(2*gu_val))
-        print(str(gu_val))
+    print(str(gu_val))
 if __name__ == "__main__":
     main()
