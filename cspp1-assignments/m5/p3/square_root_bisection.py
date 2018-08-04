@@ -13,8 +13,8 @@ def main():
     '''
     finding square root of the given number
     '''
+    x_num = int(input())
     epsilon = 0.01
-    step = 0.1
     lower = 0.0
     higher = x_num
     bi_val = (higher + lower)/2.0
