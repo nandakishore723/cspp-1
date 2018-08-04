@@ -15,7 +15,7 @@ def main():
     '''
     epsilon = 0.01
     step = 0.1
-    square = 0.1
+    square = int(input())
     guess = 0.0
     while guess <= square:
         if abs(guess**2-square) < epsilon:
