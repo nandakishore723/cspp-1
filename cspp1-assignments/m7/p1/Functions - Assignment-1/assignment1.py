@@ -39,7 +39,7 @@ def paying_debtoffinayear(previous_balance, annual_interestrate, monthly_payment
     program to check the credit card balance after one year if a person
     pays only th minimum balance
     '''
-    i = 1
+    i = 0
     for i in range(12):
         unpaid_bal = previous_balance - monthly_paymentRate * previous_balance
         new_bal = unpaid_bal + (annual_interestrate/12.0) * unpaid_bal
