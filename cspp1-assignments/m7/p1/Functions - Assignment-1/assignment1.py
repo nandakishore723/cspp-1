@@ -39,7 +39,7 @@ def paying_debtoffinayear(previous_balance, annual_interestrate, monthly_payment
     program to check the credit card balance after one year if a person
     pays only th minimum balance
     '''
-    i = 0
+    i = 1
     for i in range(12):
         unpaid_bal = previous_balance - monthly_paymentRate * previous_balance
         new_bal = unpaid_bal + (annual_interestrate/12.0) * unpaid_bal
@@ -54,5 +54,6 @@ def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
+    print('Remaining balance:', paying_debtoffinayear(data[0], data[1], data[2]))
 if __name__ == "__main__":
     main()
