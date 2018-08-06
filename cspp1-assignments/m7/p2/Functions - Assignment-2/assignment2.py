@@ -30,7 +30,6 @@
 # Updated balance each month = (Monthly unpaid balance) +
 # (Monthly interest rate x Monthly unpaid balance)
 '''
-
 def pay_debtoffinayear(blc_1, annual_interestrate):
     '''
     write a program that calculates the minimum fixed monthly payment
