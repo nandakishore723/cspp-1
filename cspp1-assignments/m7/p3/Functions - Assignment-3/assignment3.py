@@ -60,7 +60,7 @@ def paying_debtoffinayear(blc_inp, ann_intrate):
     '''
     mnth_intrate = (ann_intrate) / 12.0
     mn_paylowerbound = blc_inp / 12
-    mn_payupperbound = (blc_inp * (1 + mnthintrate) ** 12) / 12.0
+    mn_payupperbound = (blc_inp * (1 + mnthintrate)**12) / 12.0
     new_bal = blc_inp
     epsilon = 0.0001
     guess = (mn_paylowerbound + mn_payupperbound)/2
@@ -78,9 +78,7 @@ def paying_debtoffinayear(blc_inp, ann_intrate):
             new_bal = blc_inp
         else:
             return guess
-
         guess = (mn_paylowerbound + mn_payupperbound)/2
-
 def main():
     '''
     Using Bisection Search to Make the Program Faster
@@ -90,4 +88,4 @@ def main():
     data = list(map(float, data))
     print("lowest_payment:",(paying_debtoffinayear(data[0], data[1])))
 if __name__ == "__main__":
-    main()
+	main()
