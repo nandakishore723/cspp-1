@@ -32,11 +32,11 @@
 '''
 
 def pay_debtoffinayear(blc_1, annual_interestrate):
-	'''
-	write a program that calculates the minimum fixed monthly payment
-	needed in order pay off a credit card balance within 12 months.
-	'''
-	min_fixed_month_pay = 0
+    '''
+    write a program that calculates the minimum fixed monthly payment
+    needed in order pay off a credit card balance within 12 months.
+    '''
+    min_fixed_month_pay = 0
     t_bal = blc_1
     yr_count = 1
     while blc_1 > 0:
@@ -51,13 +51,13 @@ def pay_debtoffinayear(blc_1, annual_interestrate):
         yr_count += 1
     return min_fixed_month_pay
 def main():
-	'''
-	write a program that calculates the minimum fixed monthly payment
-	needed in order pay off a credit card balance within 12 months.
-	'''
-	data = input()
+    '''
+    write a program that calculates the minimum fixed monthly payment
+    needed in order pay off a credit card balance within 12 months.
+    '''
+    data = input()
     data = data.split(' ')
     data = list(map(float, data))
     print("Lowest Payment:", pay_debtoffinayear(data[0], data[1]))
 if __name__ == "__main__":
-	main()
+    main()
