@@ -56,7 +56,7 @@
 '''
 def paying_debtoffinayear(blc_inp, ann_intrate):
     '''
-	Using Bisection Search to Make the Program Faster
+    Using Bisection Search to Make the Program Faster
     '''
     mnth_intrate = (ann_intrate) / 12.0
     mn_paylowerbound = blc_inp / 12
@@ -88,4 +88,4 @@ def main():
     data = list(map(float, data))
     print("lowest_payment:",(paying_debtoffinayear(data[0], data[1])))
 if __name__ == "__main__":
-	main()
+    main()
