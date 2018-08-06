@@ -62,7 +62,7 @@ def paying_debtoffinayear(blc_inp, ann_intrate):
     mn_paylowerbound = blc_inp / 12
     mn_payupperbound = (blc_inp * (1 + mnth_intrate)**12) / 12.0
     new_bal = blc_inp
-    epsilon = 0.0001
+    epsilon = 0.03
     guess = (mn_paylowerbound + mn_payupperbound)/2
     while True:
         month = 1
