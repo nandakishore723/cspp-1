@@ -34,14 +34,14 @@
 # Updated balance each month = (Monthly unpaid balance) +
 # (Monthly interest rate x Monthly unpaid balance)
 '''
-def paying_debtoffinayear(previous_balance, annual_interestrate, monthly_paymentRate):
+def paying_debtoffinayear(previous_balance, annual_interestrate, monthly_paymentrate):
     '''
     program to check the credit card balance after one year if a person
     pays only th minimum balance
     '''
     i = 0
     for i in range(12):
-        unpaid_bal = previous_balance - monthly_paymentRate * previous_balance
+        unpaid_bal = previous_balance - monthly_paymentrate * previous_balance
         new_bal = unpaid_bal + (annual_interestrate/12.0) * unpaid_bal
         i = new_bal
         previous_balance = i
