@@ -77,7 +77,7 @@ def paying_debtoffinayear(blc_inp, ann_intrate):
             mn_payupperbound = guess
             new_bal = blc_inp
         else:
-            return guess
+            return round(guess,2)
         guess = (mn_paylowerbound + mn_payupperbound)/2
 def main():
     '''
@@ -86,6 +86,6 @@ def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print("lowest_payment:", (paying_debtoffinayear(data[0], data[1]), 2))
+    print("Lowest Payment:", (paying_debtoffinayear(data[0], data[1]), 2))
 if __name__ == "__main__":
     main()
