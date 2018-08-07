@@ -5,17 +5,18 @@
 # number and returns the factorial of given number.
 # This function takes in one number and returns one number.
 '''
-def factorial(n):
+def factorial(n_a):
     '''
-    n is positive Integer
-    returns: a positive integer, the factorial of n.
+    finding the factorial of a number.
     '''
-    if n == 0:
+    if n_a == 0:
         return 1
-    else:
-        return n*factorial(n-1)
+    return n_a * factorial(n_a-1)
 def main():
-    a = input()
-    print(factorial(int(a)))    
+    '''
+    finding the factorial of a number.
+    '''
+    a_a = input()
+    print(factorial(int(a_a)))    
 if __name__ == "__main__":
     main()
