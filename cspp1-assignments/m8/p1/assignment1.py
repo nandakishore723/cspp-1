@@ -17,6 +17,6 @@ def main():
     finding the factorial of a number.
     '''
     a_a = input()
-    print(factorial(int(a_a)))    
+    print(factorial(int(a_a)))
 if __name__ == "__main__":
     main()

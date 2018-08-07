@@ -7,10 +7,12 @@
 '''
 def sumofdigits(n):
     '''
-    n is positive Integer
-    returns: a positive integer, the sum of digits of n.
+    finding the sum of the digits
     '''
 def main():
+	'''
+    finding the sum of the digits
+    '''
     a = input()
     print(sumofdigits(int(a)))  
 if __name__ == "__main__":
