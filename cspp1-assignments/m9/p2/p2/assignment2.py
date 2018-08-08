@@ -14,6 +14,13 @@ def get_guessed_word(secret_word, letters_guessed):
     returns: string, comprised of letters and underscores that represents
     what letters in secret_word have been guessed so far.
     '''
+    a = ''
+    for i in secret_word:
+        if i not in letters_guessed:
+            a = a + '_'
+        else:
+            a = a + i
+            return a
 def main():
     '''
     Main function for current assignment
