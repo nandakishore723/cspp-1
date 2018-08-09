@@ -14,7 +14,7 @@ def get_available_letters(letters_guessed):
       yet been guessed.
     '''
     st = ""
-    m = string.ascii_lowercase()
+    m = string.ascii_lowercase
     for i in m:
     	if i_a not in letters_guessed:
     		st = st+i
