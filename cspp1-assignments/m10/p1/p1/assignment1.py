@@ -13,12 +13,12 @@ def get_available_letters(letters_guessed):
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
-    st = ""
-    m = string.ascii_lowercase
-    for i in m:
+    st_a = ""
+    m_a = string.ascii_lowercase
+    for i_a in m_a:
     	if i_a not in letters_guessed:
-    		st = st+i
-    return st
+    		st_a = st_a+i_a
+    return st_a
 def main():
     '''
     Main function for the given program
