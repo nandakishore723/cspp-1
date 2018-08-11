@@ -30,7 +30,7 @@ def create_social_network(list_a):
     dict_a = {}
     for i in range(0,len(list_a),3):
     	if list_a[i+1] in follows:
-    		dict_a[list_a[i]] = list_a[i+1].split(",")
+    		dict_a[list_a[i]] = list_a[i+2].split(",")
     	else:
     		dict_a = {}
 	return dict_a
