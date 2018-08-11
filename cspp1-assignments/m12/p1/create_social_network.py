@@ -27,13 +27,13 @@ def create_social_network(list_a):
         Empty dictionary is not None, it is a dictionary with no keys
     '''
     # remove the pass below and start writing your code
-    dict_a = {}
+    dict_new = {}
     for i in range(0,len(list_a),3):
     	if list_a[i+1] in "follows":
-    		dict_a[list_a[i]] = list_a[i+2].split(",")
+    		dict_new[list_a[i]] = list_a[i+2].split(",")
     	else:
-    		dict_a = {}
-	return dict_a
+    		dict_new = {}
+	return dict_new
 def main():
     '''
     handling testcase input and printing output
