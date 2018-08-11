@@ -41,8 +41,8 @@ def main():
     list_a = []
     lines = int(input())
     for i in range(lines):
-        val_a = input().split(" ")
-        list_a.extend(val_a)
+        val_i = input().split(" ")
+        list_i.extend(val_i)
         print(create_social_network(list_a))
 if __name__ == "__main__":
     main()
