@@ -2,7 +2,7 @@
 @author :nandakishore723
 Assignment-1 Create Social Network
 '''
-def create_social_network(data,lines):
+def create_social_network(list_a):
     '''
         The data argument passed to the function is a string
         It represents simple social network data
@@ -27,21 +27,21 @@ def create_social_network(data,lines):
         Empty dictionary is not None, it is a dictionary with no keys
     '''
     # remove the pass below and start writing your code
-    d = {}
-    for i in range(0,len(data),3):
-    	if data[i] not in d:
-    		d[data[i]] = data[i+1].split(",")
-	return d
+    dict_a = {}
+    for i in range(0,len(list_a),3):
+    	if list_a[i+1] in follows:
+    		dict_a[list_a[i]] = list_a[i+1].split(",")
+    	else:
+    		dict_a = {}
+	return dict_a
 def main():
     '''
     handling testcase input and printing output
     '''
-    string = ''
+    list_a = []
     lines = int(input())
     for i in range(lines):
-        data_input = input().split(" ")
-        string.extend(data_input)
-    print(create_social_network(string,lines))
-
+    	list_a = input().split(" ")
+    	print(create_social_network(list_a))
 if __name__ == "__main__":
     main()
