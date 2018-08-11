@@ -43,6 +43,6 @@ def main():
     for i in range(lines):
         val_a = input().split()
         list_a.extend(val_a)
-        print(create_social_network(list_a))
+    print(create_social_network(list_a))
 if __name__ == "__main__":
     main()
