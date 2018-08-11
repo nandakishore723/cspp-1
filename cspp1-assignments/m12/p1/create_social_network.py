@@ -29,7 +29,7 @@ def create_social_network(list_a):
     # remove the pass below and start writing your code
     dict_a = {}
     for i in range(0,len(list_a),3):
-    	if list_a[i+1] in follows:
+    	if list_a[i+1] in "follows":
     		dict_a[list_a[i]] = list_a[i+2].split(",")
     	else:
     		dict_a = {}
@@ -41,7 +41,8 @@ def main():
     list_a = []
     lines = int(input())
     for i in range(lines):
-    	list_a = input().split(" ")
+    	val_a = input().split(" ")
+    	list_a.extend(val_a)
     	print(create_social_network(list_a))
 if __name__ == "__main__":
     main()
