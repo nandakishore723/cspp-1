@@ -2,7 +2,6 @@
 @author :nandakishore723
 Assignment-1 Create Social Network
 '''
-d = {}
 def create_social_network(data):
     '''
         The data argument passed to the function is a string
@@ -34,6 +33,7 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
+    d = {}
     for i in range(0,len(data),2):
 		if data[i] not in d:
 			d[data[i]] = data[i+1].split(",")
@@ -46,11 +46,9 @@ def main():
     string = ''
     lines = int(input())
     for i in range(lines):
-        i += 1
-        string += input()
-        string += '\n'
-
-    print(create_social_network(string))
+        data_input = input().split(" ")
+        L.extend(data_input)
+    print(create_social_network(string,lines))
 
 if __name__ == "__main__":
     main()
