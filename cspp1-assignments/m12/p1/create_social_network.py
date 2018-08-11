@@ -40,7 +40,7 @@ def main():
     '''
     list_a = []
     lines = int(input())
-    for i in range(lines):
+    for i in range(1, lines):
         val_a = input().split(" ")
         list_a.extend(val_a)
     print(create_social_network(list_a))
