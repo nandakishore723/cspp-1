@@ -42,7 +42,7 @@ def main():
     lines = int(input())
     for i in range(lines):
         val_i = input().split(" ")
-        list_i.extend(val_i)
+        list_a.extend(val_i)
         print(create_social_network(list_a))
 if __name__ == "__main__":
     main()
