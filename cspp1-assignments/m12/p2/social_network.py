@@ -29,7 +29,8 @@ def unfollow(network, arg1, arg2):
     for m in dict_new:
         if network in dict_new:
             L.append(m)
-    return m
+        return m
+
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
