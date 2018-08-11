@@ -4,7 +4,6 @@ This is a continuation of the social network problem
 There are 3 functions below that have to be completed
 Note: PyLint score need not be 10/10 for this assignment. We expect 9.5/10
 '''
-dict_new = {}
 def follow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -25,6 +24,7 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
+    dict_new = {}
     L_a = []
     for m in dict_new:
         if network in dict_new:
