@@ -47,7 +47,7 @@ def main():
     lines = int(input())
     for i in range(lines):
         data_input = input().split(" ")
-        L.extend(data_input)
+        string.extend(data_input)
     print(create_social_network(string,lines))
 
 if __name__ == "__main__":
