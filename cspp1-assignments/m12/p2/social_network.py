@@ -24,12 +24,7 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    dict_new = {}
-    L_a = []
-    for m in dict_new:
-        if network in dict_new:
-            L.append(m)
-        return m
+    
 
 def delete_person(network, arg1):
     '''
