@@ -33,7 +33,7 @@ def create_social_network(list_a):
     		dict_new[list_a[i]] = list_a[i+2].split(",")
     	else:
     		dict_new = {}
-	    return dict_new
+	return dict_new
 def main():
     '''
     handling testcase input and printing output
