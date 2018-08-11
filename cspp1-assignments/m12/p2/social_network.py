@@ -26,10 +26,10 @@ def unfollow(network, arg1, arg2):
     '''
     # remove the pass below and start writing your code
     L_a= []
-    for k in dict_new:
+    for m in dict_new:
         if network in dict_new:
-            L.append(k)
-    return k
+            L.append(m)
+    return m
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
