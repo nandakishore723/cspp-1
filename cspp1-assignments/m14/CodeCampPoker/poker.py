@@ -64,7 +64,7 @@ def hand_rank(hand):
         return 3
     elif is_flush(hand):
         return 2
-    else:
+    elif is_straight(hand):
         return 1
     return 0
 def poker(hands):
