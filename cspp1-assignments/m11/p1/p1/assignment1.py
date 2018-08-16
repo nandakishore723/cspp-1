@@ -24,6 +24,14 @@ def get_word_score(word, n_num):
     n: integer (HAND_SIZE; i.e., hand size required for additional points)
     returns: int >= 0
     """
+    sum = 0
+    for i in word:
+        sum = sum + SCRABBLE_LETTER_VALUES[i]
+    sum = sum*len(word)
+    if n_num == len(word):
+        return sum + 50
+    return sum
+    '''
     sum_a = 0
     for i_a in word:
         if i_a in SCRABBLE_LETTER_VALUES:
@@ -31,13 +39,14 @@ def get_word_score(word, n_num):
     sum_a = sum_a * len(word)
     if len(word) == n_num:
         sum_a = sum_a + 50
-    return a
+    return sum_a*len(word)
+    '''
 def main():
     '''
     Main function for the given problem
     '''
-    data = input()
-    data = data.split()
-    print(get_word_score(data[0], int(data[1])))
+    word = input()
+    word = word.split()
+    print(get_word_score(word[0], int(word[1])))
 if __name__ == "__main__":
     main()
