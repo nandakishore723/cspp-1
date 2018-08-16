@@ -36,6 +36,9 @@ def is_flush(hand):
     return True
 
 def four_of_kind(hand):
+    '''
+    four of kind function
+    '''
     count = 0
     face_val = []
     for i in hand:
@@ -47,6 +50,9 @@ def four_of_kind(hand):
     return count == 3
 
 def three_of_kind(hand):
+    '''
+    three of kind function
+    '''
     count = 0
     face_val1 = []
     for i in hand:
@@ -58,6 +64,9 @@ def three_of_kind(hand):
     return count == 2
 
 def two_pair(hand):
+    '''
+    two pair function
+    '''
     count = 0
     face_val2 = []
     for i in hand:
