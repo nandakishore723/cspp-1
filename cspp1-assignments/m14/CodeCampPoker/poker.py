@@ -20,8 +20,8 @@ def is_straight(hand):
     for i in hand:
         face_value.append(d_cards[h[0]])
     face_value.sort()
-    for i in range(0,len(face_value)-1):
-        if face_value[i+1]-face_value[i]!=1:
+    for i in range(0, len(face_value)-1):
+        if face_value[i+1]-face_value[i] != 1:
             return False
     return True
 def is_flush(hand):
@@ -35,7 +35,7 @@ def is_flush(hand):
     '''
     suit = hand[0]
     for h in hand:
-        if suit[1]!=h[1]:
+        if suit[1] != h[1]:
             return False
         return True
 def hand_rank(hand):
