@@ -6,7 +6,6 @@
 '''
 d_cards = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10, '9':9, '8':8, '7':7, \
 '6':6, '5':5, '4':4, '3':3, '2':2}
-
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
@@ -55,7 +54,6 @@ def hand_rank(hand):
     # What would be the logic to determine if a hand is a straight or flush?
     # Let's not think about the logic in the hand_rank function
     # Instead break it down into two sub functions is_straight and is_flush
-
     # check for straight, flush and straight flush
     # best hand of these 3 would be a straight flush with the return value 3
     # the second best would be a flush with the return value 2
@@ -73,14 +71,11 @@ def hand_rank(hand):
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
-
         Input: List of 2 or more poker hands
                Each poker hand is represented as a list
                Print the hands to see the hand representation
-
         Output: Return the winning poker hand
     '''
-
     # the line below may be new to you
     # max function is provided by python library
     # learn how it works, in particular the key argument, from the link
