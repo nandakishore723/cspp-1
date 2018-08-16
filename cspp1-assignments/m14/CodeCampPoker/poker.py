@@ -4,7 +4,7 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-d_cards = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10, '9':9, '8':8, '7':7, \
+D_CARDS = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10, '9':9, '8':8, '7':7, \
 '6':6, '5':5, '4':4, '3':3, '2':2}
 def is_straight(hand):
     '''
@@ -18,7 +18,7 @@ def is_straight(hand):
     '''
     face_value = []
     for i in hand:
-        face_value.append(d_cards[i[0]])
+        face_value.append(D_CARDS[i[0]])
     face_value.sort()
     for i in range(0, len(face_value)-1):
         if face_value[i+1]-face_value[i] != 1:
@@ -34,8 +34,8 @@ def is_flush(hand):
         Write the code for it and return True if it is a flush else return False
     '''
     suit = hand[0]
-    for h in hand:
-        if suit[1] != h[1]:
+    for h_a in hand:
+        if suit[1] != h_a[1]:
             return False
     return True
 def hand_rank(hand):
