@@ -63,6 +63,9 @@ def two_pair_ofakind(hand):
     return len(card_values) == 4
 
 def one_pairofakind(hand):
+    '''
+    sends bool value if the one pair condition
+    '''
     card_values = set(['--23456789TJQKA'.index(c) for c, s in hand])
     return len(card_values) == 4
 
