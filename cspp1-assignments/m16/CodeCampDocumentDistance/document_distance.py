@@ -9,8 +9,8 @@ def combine_dictionaries(dict_1, dict_2):
         combining two dictionaries
     '''
     dictionary = {}
-    for word in dict_1, dict_2:
-        if word in dict_2:
+    for word in dict_1 and dict_2:
+        if word not in dictionary:
             dictionary[word] = [dict_1[word], dict_2[word]]
 
     for word in dict_1:
@@ -38,7 +38,7 @@ def create_dictionary(words_list):
     stopwords = load_stopwords("stopwords.txt")
     for word in words_list:
         word = word.strip()
-        if word not in stopwords and words_list.len(word) > 0:
+        if word not in stopwords and word != '':
             if word not in dictionary:
                 dictionary[word] = 1
             else:
