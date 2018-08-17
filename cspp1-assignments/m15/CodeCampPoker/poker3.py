@@ -44,10 +44,11 @@ def four_ofakind(hand):
 
     card_values = set(['--23456789TJQKA'.index(c) for c, s in hand])
     return len(card_values) == 2
+'''
 def full_house(hand):
     card_values = set(['--23456789TJQKA'.index(c) for c, s in hand])
     return len(card_values) == 2
-
+'''
 def three_ofakind(hand):
     '''when three of same kind and two of other of other rank
     '''
@@ -58,8 +59,7 @@ def two_pair_ofakind(hand):
     '''when two of same kind and three other of other rank
     '''
 
-    card_values = set(['--23456789TJQKA'.index(c) for c, s in hand])
-    return len(card_values) == 4
+    return set(hand) == 4
 
 def one_pairofakind(hand):
     '''
@@ -98,7 +98,7 @@ def hand_rank(hand):
         return 8
     elif four_ofakind(hand):
         return 7
-    elif full_house(hand):
+    elif three_ofakind(hand) and two_pair_ofakind(hand):
         return 6
     elif is_flush(hand):
         return 5
