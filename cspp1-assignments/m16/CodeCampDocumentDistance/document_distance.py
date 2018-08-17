@@ -9,9 +9,10 @@ def combine_dictionaries(dict_1, dict_2):
         combining two dictionaries
     '''
     dictionary = {}
-    for word in dict_1 and dict_2:
-        if word not in dictionary:
-            dictionary[word] = [dict_1[word], dict_2[word]]
+    for word in dict_1:
+        if word in dict_2:
+            if word not in dictionary:
+                dictionary[word] = [dict_1[word], dict_2[word]]
 
     for word in dict_1:
         if word not in dictionary:
