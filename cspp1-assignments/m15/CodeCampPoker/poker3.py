@@ -108,7 +108,8 @@ def hand_rank(hand):
         return 2
     elif one_pairofakind(hand):
         return 1
-    return 0
+    else:
+        return 0
 
 def poker(hands):
     '''
