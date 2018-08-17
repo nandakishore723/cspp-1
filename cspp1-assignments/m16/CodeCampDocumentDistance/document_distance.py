@@ -83,4 +83,4 @@ def main():
     print(similarity(input1, input2))
 
 if __name__ == '__main__':
-	main()
+    main()
