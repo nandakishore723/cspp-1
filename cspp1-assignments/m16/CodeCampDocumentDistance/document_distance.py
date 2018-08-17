@@ -58,9 +58,9 @@ def similarity(text_1, text_2):
     '''
     Compute the document distance as given in the PDF
     '''
-    dictionary_one = clean_given_text(text_1)
-    dictionary_two = clean_given_text(text_2)
-    dictionary = combine_dictionaries(dictionary_one, dictionary_two)
+    dict_1 = clean_given_text(text_1)
+    dict_2 = clean_given_text(text_2)
+    dictionary = combine_dictionaries(dict_1, dict_2)
     return calculate_similarity(dictionary)
 
 def load_stopwords(filename):
