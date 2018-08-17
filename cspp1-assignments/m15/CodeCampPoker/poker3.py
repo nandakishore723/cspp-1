@@ -59,7 +59,7 @@ def two_pair_ofakind(hand):
     '''when two of same kind and three other of other rank
     '''
 
-    return set(hand) == 4
+    return len(set(hand)) == 4
 
 def one_pairofakind(hand):
     '''
