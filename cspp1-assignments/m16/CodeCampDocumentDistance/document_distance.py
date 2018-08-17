@@ -60,6 +60,7 @@ def similarity(text_1, text_2):
     '''
     dict_1 = clean_given_text(text_1)
     dict_2 = clean_given_text(text_2)
+    print(dict_1,dict_2)
     dictionary = combine_dictionaries(dict_1, dict_2)
     return calculate_similarity(dictionary)
 
