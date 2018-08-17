@@ -60,7 +60,7 @@ def two_pair_ofakind(hand):
     '''
 
     card_values = set(['--23456789TJQKA'.index(c) for c, s in hand])
-    return len(card_values) == 4
+    return len(card_values) == 3
 
 def one_pairofakind(hand):
     '''
