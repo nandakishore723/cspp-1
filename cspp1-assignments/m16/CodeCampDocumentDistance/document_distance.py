@@ -13,7 +13,6 @@ def combine_dictionaries(dict_1, dict_2):
         if word in dict_2:
             if word not in dictionary:
                 dictionary[word] = [dict_1[word], dict_2[word]]
-
     for word in dict_1:
         if word not in dictionary:
             dictionary[word] = [dict_1[word], 0]
@@ -24,7 +23,7 @@ def combine_dictionaries(dict_1, dict_2):
 
 def calculate_similarity(dictionary_values):
     '''
-    calculating frequency
+    calculating similarity
     '''
     numerator = sum([k[0] * k[1] for k in dictionary_values()])
     d1_a = math.sqrt(sum([k[0] ** 2 for k in dictionary_values()]))
@@ -33,7 +32,7 @@ def calculate_similarity(dictionary_values):
 
 def create_dictionary(words_list):
     '''
-    returns dictionary, takes input as word list
+    returns dictionary without stopwords
     '''
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
@@ -48,7 +47,7 @@ def create_dictionary(words_list):
 
 def clean_given_text(text_input):
     '''
-    takes string and return list
+    clean the input text
     '''
     words = text_input.lower().strip().replace('\'', '')
     regex = re.compile('[^a-z]')
@@ -69,8 +68,8 @@ def load_stopwords(filename):
         loads stop words from a file and returns a dictionary
     '''
     stopwords = {}
-    with open(filename, 'r') as filename:
-        for line in filename:
+    with open(filename, 'r') as filename1:
+        for line in filename1:
             stopwords[line.strip()] = 0
     return stopwords
 
