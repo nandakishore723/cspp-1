@@ -4,7 +4,7 @@
 '''
 import re
 import math
-def combine_dictionaries(dict1, dict2):
+def combine_dictionaries(dict_1, dict_2:
     '''
         combining two dictionaries
     '''
