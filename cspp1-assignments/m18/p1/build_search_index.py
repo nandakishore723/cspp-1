@@ -63,11 +63,11 @@ def build_search_index(docs):
     stopword = load_stopwords("stopwords.txt")
     for index, line in enumerate(docs):
         lis = remove_stopwords(word_list(line), stopword)
-        for ele in set(lis):
-            if ele in dictionary:
-                dictionary[ele].append((index, lis.count(ele)))
+        for i in set(lis):
+            if i in dictionary:
+                dictionary[i].append((index, lis.count(i)))
             else:
-                dictionary[ele] = [(index, lis.count(ele))]
+                dictionary[i] = [(index, lis.count(i))]
     return dictionary
 
 # helper function to print the search index
@@ -83,11 +83,11 @@ def remove_stopwords(word, stopword):
     '''
     remove stopwords
     '''
-    lis_a = word
+    lis = word
     for i in word:
         if i in stopword:
-            lis_a.remove(i)
-    return lis_a
+            lis.remove(i)
+    return lis
 # main function that loads the docs from files
 def main():
     '''
