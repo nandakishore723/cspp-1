@@ -41,25 +41,9 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    words = text.lower().split(" ")
     regex = re.compile('[^a-z]')
-    words = regex.split()
-    return words
-
-def create_dictionary(words_list):
-    '''
-    returns dictionary without stopwords
-    '''
-    dictionary = {}
-    stopwords = load_stopwords("stopwords.txt")
-    for word in words_list:
-        word = word.strip()
-        if word not in stopwords and word != '':
-            if word not in dictionary:
-                dictionary[word] = 1
-            else:
-                dictionary[word] += 1
-    return dictionary
+    return [regex.sub("", word.strip()) for word in text.lower().split(" ")]
+    return word
 
 def build_search_index(docs):
     '''
@@ -78,12 +62,14 @@ def build_search_index(docs):
 
     # return search index
     dictionary = {}
-    for word in docs:
-        if word not in dictionary:
-            dictionary[word] = docs[word]
-    for word in docs:
-        if word not in dictionary:
-            dictionary[word] = [docs[word], 0]
+    stopword = load_stopwords("stopwords.txt")
+    for index, line in enumerate(docs):
+        list_ = remove_stopwords(word_list(line), stopword)
+        for ele in set(lis):
+            if ele in dictionary:
+                dictionary[ele].append((index, lis.count(ele)))
+            else:
+                dictionary[ele] = [(index, lis.count(ele))]
     return dictionary
 
 # helper function to print the search index
@@ -95,7 +81,15 @@ def print_search_index(index):
     keys = sorted(index.keys())
     for key in keys:
         print(key, " - ", index[key])
-
+def remove_stopwords(word, stopword):
+    '''
+    remove stopwords
+    '''
+    lis = word
+    for i in word:
+        if i in stopword:
+            lis.remove(i)
+    return lis
 # main function that loads the docs from files
 def main():
     '''
@@ -104,7 +98,7 @@ def main():
     # empty document list
     documents = []
     # iterate for n times
-    lines = input()
+    lines = int(input())
     # iterate through N times and add documents to the list
     for i in range(lines):
         documents.append(input())
