@@ -64,7 +64,7 @@ def build_search_index(docs):
     dictionary = {}
     stopword = load_stopwords("stopwords.txt")
     for index, line in enumerate(docs):
-        lis= remove_stopwords(word_list(line), stopword)
+        lis = remove_stopwords(word_list(line), stopword)
         for ele in set(lis):
             if ele in dictionary:
                 dictionary[ele].append((index, lis.count(ele)))
