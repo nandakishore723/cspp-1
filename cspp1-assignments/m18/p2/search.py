@@ -1,4 +1,5 @@
 '''
+@author : nandakishore723
     Tiny Search Engine - Part 2 - Search
     In this programming assingment you are given the search index and search queries as input.
     Complete the program below to search in the index. Don't worry, it is explained below.
