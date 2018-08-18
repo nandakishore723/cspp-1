@@ -41,7 +41,7 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    words = text.lower().split(" ")
+    words = text.lower().split("")
     regex = re.compile('[^a-z]')
     words = regex
     return words
