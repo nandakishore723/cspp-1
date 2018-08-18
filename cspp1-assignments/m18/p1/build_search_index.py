@@ -41,7 +41,7 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    words = text.lower().split("")
+    words = text.lower().split(" ")
     regex = re.compile('[^a-z]')
     words = regex.split()
     return words
@@ -89,7 +89,7 @@ def main():
     # empty document list
     documents = []
     # iterate for n times
-    lines = int(input())
+    lines = input()
     # iterate through N times and add documents to the list
     for i in range(lines):
         documents.append(input())
