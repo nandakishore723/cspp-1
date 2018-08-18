@@ -41,10 +41,25 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    words = text.lower().split(" ")
+    words = text.lower().split("")
     regex = re.compile('[^a-z]')
-    words = regex.split("")
+    words = regex.split()
     return words
+
+def create_dictionary(words_list):
+    '''
+    returns dictionary without stopwords
+    '''
+    dictionary = {}
+    stopwords = load_stopwords("stopwords.txt")
+    for word in words_list:
+        word = word.strip()
+        if word not in stopwords and word != '':
+            if word not in dictionary:
+                dictionary[word] = 1
+            else:
+                dictionary[word] += 1
+    return dictionary
 
 def build_search_index(docs):
     '''
@@ -89,7 +104,7 @@ def main():
     # empty document list
     documents = []
     # iterate for n times
-    lines = input()
+    lines = int(input())
     # iterate through N times and add documents to the list
     for i in range(lines):
         documents.append(input())
