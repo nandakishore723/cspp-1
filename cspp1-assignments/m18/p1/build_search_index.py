@@ -34,7 +34,6 @@ def load_stopwords(filename):
             stopwords[line.strip()] = 0
     return stopwords
 
-
 def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
@@ -84,11 +83,11 @@ def remove_stopwords(word, stopword):
     '''
     remove stopwords
     '''
-    lis = word
+    lis_a = word
     for i in word:
         if i in stopword:
-            lis.remove(i)
-    return lis
+            lis_a.remove(i)
+    return lis_a
 # main function that loads the docs from files
 def main():
     '''
