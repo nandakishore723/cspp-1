@@ -65,7 +65,7 @@ def build_search_index(docs):
     s_index = {}
     for word in docs:
         if word not in s_index:
-            s_index[word] = docs[word] 
+            s_index[word] = docs[word]
     for word in docs:
         if word not in s_index:
             s_index[word] = [docs[word], 0]
