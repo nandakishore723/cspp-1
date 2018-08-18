@@ -68,7 +68,7 @@ def build_search_index(docs):
             dictionary[word] = docs[word]
     for word in docs:
         if word not in dictionary:
-            dictionary[word] = [docs[word], 0]
+            dictionary[word] = [0, docs[word]]
     return dictionary
 
 # helper function to print the search index
