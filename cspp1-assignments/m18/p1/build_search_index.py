@@ -72,15 +72,8 @@ def build_search_index(docs):
 
 # helper function to print the search index
 # use this to verify how the search index looks
-def print_search_index(index):
-    '''
-        print the search index
-    '''
-    keys = sorted(index.keys())
-    for key in keys:
-        print(key, " - ", index[key])
 def remove_stopwords(word, stopword):
-    '''
+     '''
     remove stopwords
     '''
     lis = word
@@ -88,6 +81,14 @@ def remove_stopwords(word, stopword):
         if i in stopword:
             lis.remove(i)
     return lis
+def print_search_index(index):
+    '''
+        print the search index
+    '''
+    keys = sorted(index.keys())
+    for key in keys:
+        print(key, " - ", index[key])
+
 # main function that loads the docs from files
 def main():
     '''
