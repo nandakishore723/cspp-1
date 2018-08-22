@@ -42,6 +42,7 @@ Problem 1 - Build the Shift Dictionary and Apply Shift'''
 # Remember that spaces and punctuation should not be changed by the cipher.
 
 # Helper code
+import string
 def load_words(file_name):
     '''
     file_name (string): the name of the file containing
@@ -64,7 +65,6 @@ def load_words(file_name):
 
 WORDLIST_FILENAME = 'words.txt'
 # Helper code End
-
 
 ### Paste your implementation of the Message class here
 class Message():
@@ -103,7 +103,7 @@ class Message():
         '''
         return self.valid_words[:]
 
-def build_shift_dict(self, shift):
+    def build_shift_dict(self, shift):
         '''
         Creates a dictionary that can be used to apply a cipher to a letter.
         The dictionary maps every uppercase and lowercase letter to a
@@ -131,7 +131,7 @@ def build_shift_dict(self, shift):
         self.shift_dict = dict(zip(full_keys, full_values))
         return self.shift_dict
 
-def apply_shift(self, shift):
+    def apply_shift(self, shift):
         '''
         Applies the Caesar Cipher to self.message_text with the input shift.
         Creates a new string that is self.message_text shifted down the
