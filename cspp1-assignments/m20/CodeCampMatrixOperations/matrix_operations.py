@@ -66,7 +66,7 @@ def read_matrix():
         if columns == len(list_mat_row):
             mat.append([int(i) for i in list_mat_row])
         else:
-            print("Error: Ivalid input for the matrix")
+            print("Error: Invalid input for the matrix")
             return None
     return mat
 
