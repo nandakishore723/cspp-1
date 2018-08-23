@@ -27,7 +27,7 @@ def mult_matrix(m1, m2):
     else:
         print("Error : Matrix shapes invalid for mult")
         return None
-        
+
 def re_mat(rows, columns):
     add_matrix = [[0 for i in range(columns)] for i in range(rows)]
     return (add_matrix)
@@ -74,11 +74,11 @@ def read_matrix():
 def main():
     # read matrix 1
     matrix1 = read_matrix()
-    if m1 is None:
+    if matrix1 is None:
         exit()
     # read matrix 2
     matrix2 = read_matrix()
-    if m2 is None:
+    if matrix2 is None:
         exit()
     # add matrix 1 and matrix 2
     print(add_matrix(matrix1, matrix2))
