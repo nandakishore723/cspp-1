@@ -25,7 +25,7 @@ def mult_matrix(m1, m2):
                     add_m[i][j] += m1[i][k] * m2[k][j]
         return add_m
     else:
-        print("Error : Matrix shapes invalid for mult")
+        print("Error: Matrix shapes invalid for mult")
         return None
 
 def re_mat(rows, columns):
