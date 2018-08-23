@@ -32,7 +32,7 @@ def re_mat(rows, columns):
     add_matrix = [[0 for i in range(columns)] for i in range(rows)]
     return add_matrix
 
-def add_matrix(m1, m2):
+def add_matrix(m_1, m_2):
     '''
         check if the matrix shapes are similar
         add the matrices and return the result matrix
@@ -40,11 +40,11 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    add_m = re_mat(len(m1), len(m1[0]))
-    if len(m1) == len(m2) and len(m1[0]) == len(m2[0]):
-        for i in range(len(m1)):
-            for j in range(len(m1[0])):
-                add_m[i][j] += m1[i][j] + m2[i][j]
+    add_m = re_mat(len(m_1), len(m_1[0]))
+    if len(m_1) == len(m_2) and len(m_1[0]) == len(m_2[0]):
+        for i in range(len(m_1)):
+            for j in range(len(m_1[0])):
+                add_m[i][j] += m_1[i][j] + m_2[i][j]
         return add_m
     else:
         print("Error: Matrix shapes invalid for addition")
