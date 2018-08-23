@@ -71,6 +71,9 @@ def read_matrix():
     return mat
 
 def main():
+    '''
+    read the matrix 1 and 2
+    '''
     # read matrix 1
     m_1 = read_matrix()
     if m_1 is None:
