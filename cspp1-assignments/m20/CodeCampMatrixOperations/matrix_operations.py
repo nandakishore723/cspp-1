@@ -47,7 +47,7 @@ def add_matrix(m1, m2):
                 add_m[i][j] += m1[i][j] + m2[i][j]
         return add_m
     else:
-        print("Error: Matrix shapes invalid for mult")
+        print("Error: Matrix shapes invalid for addition")
         return None
 
 def read_matrix():
