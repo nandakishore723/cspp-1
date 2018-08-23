@@ -18,7 +18,7 @@ def mult_matrix(m_1, m_2):
         return add_m
     else:
         print("Error: Matrix shapes invalid for mult")
-        return None
+    return None
 
 def re_mat(rows, columns):
     '''
