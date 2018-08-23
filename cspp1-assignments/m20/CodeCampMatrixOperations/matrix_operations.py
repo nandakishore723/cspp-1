@@ -32,8 +32,8 @@ def re_mat(rows, columns):
     '''
     consider an empty list
     '''
-    add_matrix = [[0 for i in range(columns)] for i in range(rows)]
-    return add_matrix
+    add_mat = [[0 for i in range(columns)] for i in range(rows)]
+    return add_mat
 
 def add_matrix(m_1, m_2):
     '''
