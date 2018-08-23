@@ -16,9 +16,8 @@ def mult_matrix(m_1, m_2):
                 for k in range(len(m_2)):
                     add_m[i][j] += m_1[i][k] * m_2[k][j]
         return add_m
-    else:
         print("Error: Matrix shapes invalid for mult")
-        return None
+    return None
 
 def re_mat(rows, columns):
     '''
@@ -41,9 +40,8 @@ def add_matrix(m_1, m_2):
             for j in range(len(m_1[0])):
                 add_m[i][j] += m_1[i][j] + m_2[i][j]
         return add_m
-    else:
         print("Error: Matrix shapes invalid for addition")
-        return None
+    return None
 
 def read_matrix():
     '''
