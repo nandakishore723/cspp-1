@@ -2,21 +2,21 @@
 @author : nandakishore723
 '''
 #def mult_matrix(m1, m2):
-    '''
+'''
         check if the matrix1 columns = matrix2 rows
         mult the matrices and return the result matrix
         print an error message if the matrix shapes are not valid for mult
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
-    '''
-    '''rows, columns = len(matrix1), len(matrix2[0])
+'''
+'''rows, columns = len(matrix1), len(matrix2[0])
     matrix = [[0] * columns for _ in range(rows)]
     for i in range(rows):
         for j in range(columns):
             result[i][j] = sum(matrix1[i][k] * matrix2[k][j]
                 for k in range(len(matrix2))):
     return result
-    '''
+'''
 
 def add_matrix(m1, m2):
     '''
