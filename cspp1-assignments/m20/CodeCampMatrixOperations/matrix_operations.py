@@ -44,7 +44,7 @@ def add_matrix(m1, m2):
     if len(m1[0]) == len(m2) and len(m1[0]) == len(m2[0]):
         for i in range(len(m1)):
             for j in range(len(m1[0])):
-                add_m[i][j] += m1[i][j] * m2[i][j]
+                add_m[i][j] += m1[i][j] + m2[i][j]
         return add_m
     else:
         print("Error: Matrix shapes invalid for mult")
