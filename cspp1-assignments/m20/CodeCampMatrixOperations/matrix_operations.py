@@ -27,7 +27,7 @@ def add_matrix(m1, m2):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     Z = []
-    for i in range(0,len(m1)):
+    for i in range(0, len(m1)):
         for column in range(0, len(m1[i])):
             result = m1[i][column] + m2[i][column]
             Z[i][j] = (result)
@@ -59,8 +59,8 @@ def main():
     # read matrix 2
     matrix2 = read_matrix()
     # add matrix 1 and matrix 2
-    print(add_matrix(matrix1,matrix2))
+    print(add_matrix(matrix1, matrix2))
     # multiply matrix 1 and matrix 2
-    print(mult_matrix(matrix1,maatrix2))
+    print(mult_matrix(matrix1, matrix2))
 if __name__ == '__main__':
     main()
