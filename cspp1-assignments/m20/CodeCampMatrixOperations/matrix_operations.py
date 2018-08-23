@@ -9,14 +9,6 @@ def mult_matrix(m_1, m_2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    '''rows, columns = len(matrix1), len(matrix2[0])
-    matrix = [[0] * columns for _ in range(rows)]
-    for i in range(rows):
-        for j in range(columns):
-            result[i][j] = sum(matrix1[i][k] * matrix2[k][j]
-                for k in range(len(matrix2))):
-    return result
-    '''
     add_m = re_mat(len(m_1), len(m_2[0]))
     if len(m_1[0]) == len(m_2):
         for i in range(len(m_1)):
