@@ -27,8 +27,8 @@ def add_matrix(m1, m2):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     Z = []
-    for i in range(0, len(m1)-1):
-        for column in range(0, len(m1[i])):
+    for i in range(0, len(m1)):
+        for column in range(0, len(m1[i]-1)):
             result = m1[i][column] + m2[i][column]
             Z[i][j] = (result)
     return Z
