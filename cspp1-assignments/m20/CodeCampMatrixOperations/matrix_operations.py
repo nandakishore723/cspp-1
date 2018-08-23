@@ -1,7 +1,7 @@
 '''
 @author : nandakishore723
 '''
-def mult_matrix(m1, m2):
+#def mult_matrix(m1, m2):
     '''
         check if the matrix1 columns = matrix2 rows
         mult the matrices and return the result matrix
@@ -30,7 +30,7 @@ def add_matrix(m1, m2):
     for i in range(0, len(m1)-1):
         for column in range(0, len(m1[i])):
             result = m1[i][column] + m2[i][column]
-            Z[i][j] = (result)
+            Z[i][j] = result
     return Z
 
 def read_matrix():
