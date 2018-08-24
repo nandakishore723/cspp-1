@@ -70,7 +70,7 @@ def read_input():
         list_input = input().split(" ")
         matrix.append(list_input)
     return matrix
-    
+
 def main():
     '''
     main function
