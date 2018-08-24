@@ -59,7 +59,7 @@ def result_int(mat):
         return mat[0][2]
     elif mat[2][0] == mat[1][1] == mat[0][2]:
         return mat[2][0]
-    return ("invalid input")
+    print("invalid input")
 
 def read_input():
     '''
