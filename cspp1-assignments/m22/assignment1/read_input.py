@@ -1,7 +1,7 @@
 '''
 Write a python program to read multiple lines of text input and store the input into a string.
 '''
-def ss(s):
+def ss(s, lines):
 
  #   lines = ""
   #  for i in s:
