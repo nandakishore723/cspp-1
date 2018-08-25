@@ -11,7 +11,7 @@ def ss(s):
         return True
 
 def main():
-    s = raw_input()
+    s = raw_input(" ")
     ss(s)
 if __name__ == '__main__':
     main()
