@@ -4,15 +4,16 @@ Write a function to print a dictionary with the keys in sorted order along with 
 frequency of each word. Format of the printing should be one key per line and separate
 the key and frequency with a SPACE - SPACE.
 '''
-
 def print_dictionary(dictionary):
-    dictionary = {}
-    for word in dictionary:
-    	word = word.strip()
-    	
+    """print dictionary"""
+   
+    keys = sorted(dictionary.keys())
+    for key in keys:
+        print(key, "_", dictionary[key])
+
 def main():
+    """this is main"""
     dictionary = eval(input())
     print_dictionary(dictionary)
-
 if __name__ == '__main__':
     main()
