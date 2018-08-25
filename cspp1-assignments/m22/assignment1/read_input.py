@@ -4,7 +4,9 @@ Write a python program to read multiple lines of text input and
 store the input into a string.
 '''
 def main():
-	#reading lines
+	'''
+	reading lines
+	'''
     lines = int(input())
     s_l = []
     for i in range(lines):
