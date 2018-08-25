@@ -7,13 +7,13 @@ import re
 #import math
 def clean_string(string):
 	'''
-	checking for values
+	clean
 	'''
     return re.sub('[^a-zA-Z0-9]', '', string)
 
 def main():
 	'''
-	taking values 
+	main 
 	'''
     string = input()
     print(clean_string(string))
