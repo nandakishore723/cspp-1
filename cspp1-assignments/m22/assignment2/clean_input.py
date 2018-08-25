@@ -6,7 +6,7 @@ characters and retain alphabets in both upper and lower case and numbers.
 import re
 #import math
 def clean_string(string):
-	'''clean'''
+	"""clean"""
     return re.sub('[^a-zA-Z0-9]', '', string)
 
 def main():
