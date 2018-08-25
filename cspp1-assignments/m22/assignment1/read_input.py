@@ -3,15 +3,13 @@
 Write a python program to read multiple lines of text input and
 store the input into a string.
 '''
-def ss(s):
-    lines = " "
-    for i in s:
-        if i not in lines:
-            return False
-        return True
-
 def main():
-    s = raw_input(" ")
-    ss(s)
+    "input and output"
+    lines = int(input())
+    s = []
+    for i in range(lines):
+        s.append(input())
+    for i in s:
+        print(i)
 if __name__ == '__main__':
     main()

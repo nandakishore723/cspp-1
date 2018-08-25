@@ -8,12 +8,27 @@
     satisfies all the sudoku rules given in the statement above.
 '''
 
+def next_cell(grid,i,j):
+    for val in range(i,9):
+        for val in range(j,9):
+            if grid[x][y] == 0:
+                return x,y
+
+    for val in range(0,9):
+        for val in range(0,9):
+            if grid[x][y] == 0:
+    return -1 -1
+
+def if_valid(grid,i,j,e):
+    row = all([e != grid[i][x] for x in range(9)])
+    if row:
+        column = all([e != grid[x][j] for x in range(9)])
 def check_sudoku(sudoku):
     '''
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    pass
+    
 
 def main():
     '''
