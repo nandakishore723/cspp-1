@@ -9,9 +9,7 @@ def clean_string(string):
     return re.sub('[^a-zA-Z0-9]', '', string)
 
 def main():
-	
     string = input()
     print(clean_string(string))
-
 if __name__ == '__main__':
     main()
