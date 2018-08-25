@@ -9,7 +9,7 @@ def print_dictionary(dictionary):
    
     keys = sorted(dictionary.keys())
     for key in keys:
-        print(key, "_", dictionary[key])
+        print(key, " ", dictionary[key])
 
 def main():
     """this is main"""
