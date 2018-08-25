@@ -5,13 +5,12 @@ characters and retain alphabets in both upper and lower case and numbers.
 '''
 import re
 #import math
-def clean_string(str_a):
+def clean_string(string):
 
-    return re.sub('[^a-zA-Z0-9]', '', str_a)
+    return re.sub('[^a-zA-Z0-9]', '', string)
 
 def main():
-	'''This is main function'''
     string = input()
-    print(clean_string(str_a))
+    print(clean_string(string))
 if __name__ == '__main__':
     main()
