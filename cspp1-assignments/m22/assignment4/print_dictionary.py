@@ -5,14 +5,13 @@ frequency of each word. Format of the printing should be one key per line and se
 the key and frequency with a SPACE - SPACE.
 '''
 def print_dictionary(dictionary):
-    """print dictionary"""
-   
+ """printing dictionary"""
     keys = sorted(dictionary.keys())
     for key in keys:
         print(key, "-", dictionary[key])
 
 def main():
-    """this is main"""
+"""it's main"""
     dictionary = eval(input())
     print_dictionary(dictionary)
 if __name__ == '__main__':
