@@ -1,11 +1,8 @@
-'''@author : nandakishore723'''
-''' Implement CipherTextMessage Class '''
+'''
+@author : nandakishore723
+Implement CipherTextMessage Class
+'''
 import string
-
-# Helper code begins
-
-### DO NOT MODIFY THIS FUNCTION ###
-
 def load_words(file_name):
     '''
     file_name (string): the name of the file containing
@@ -14,18 +11,11 @@ def load_words(file_name):
     Depending on the size of the word list, this function may
     take a while to finish.
     '''
-    # print('Loading word list from file...')
-    # inFile: file
-    in_file = open(file_name, 'r')
-    # line: string
-    line = in_file.readline()
-    # word_list: list of strings
+    file_in = open(file_name, 'r')
+    line = file_in.readline()
     word_list = line.split()
-    # print('  ', len(word_list), 'words loaded.')
-    in_file.close()
+    file_in.close()
     return word_list
-
-### DO NOT MODIFY THIS FUNCTION ###
 
 def is_word(word_list, word):
     '''
@@ -44,23 +34,21 @@ def is_word(word_list, word):
     word = word.strip(" !@#$%^&*()-_+={}[]|\:;'<>?,./\"")
     return word in word_list
 
-### DO NOT MODIFY THIS FUNCTION ###
-
 def get_story_string():
     """
     Returns: a joke in encrypted text.
     """
-    filen = open("story.txt", "r")
-    story = str(filen.read())
-    filen.close()
+    file_length = open("story.txt", "r")
+    story = str(file_length.read())
+    file_length.close()
     return story
 
-WORDLIST_FILENAME = 'words.txt'
 
-class Message(object):
-    ''' Message object '''
-    ### DO NOT MODIFY THIS METHOD ###
-
+WORDLIST_FILE_LENGTHNAME = 'words.txt'
+class Message:
+    '''
+    Message object
+    '''
     def __init__(self, text):
         '''
         Initializes a Message object
@@ -161,7 +149,6 @@ class PlaintextMessage(Message):
         self.encrypting_dict = message.build_shift_dict(shift)
         self.message_text_encrypted = message.apply_shift(shift)
 
-    ### DO NOT MODIFY THIS METHOD ###
     def get_shift(self):
         '''
         Used to safely access self.shift outside of the class
@@ -169,7 +156,6 @@ class PlaintextMessage(Message):
         '''
         return self.shift
 
-    ### DO NOT MODIFY THIS METHOD ###
     def get_encrypting_dict(self):
         '''
         Used to safely access a copy self.encrypting_dict outside of the class
@@ -177,7 +163,7 @@ class PlaintextMessage(Message):
         '''
         return self.encrypting_dict
 
-    ### DO NOT MODIFY THIS METHOD ###
+
     def get_message_text_encrypted(self):
         '''
         Used to safely access self.message_text_encrypted outside of the class
@@ -185,7 +171,6 @@ class PlaintextMessage(Message):
         '''
         return self.message_text_encrypted
 
-    ### DO NOT MODIFY THIS METHOD ###
     def change_shift(self, shift):
         '''
         Changes self.shift of the PlaintextMessage and updates other
@@ -241,21 +226,12 @@ class CiphertextMessage(Message):
                 self.decrypted_message = (26 - shift, decrypted)
         return self.decrypted_message
 
-# Helper code ends
-
-def decrypt_story():
-    ''' Decrypt the story text using CiphertextMessage class and return the
-        shift value and decrypted string in a tuple.
-    '''
-    # pass #delete this line when you write your code.
-    decrypt_object = CiphertextMessage(get_story_string())
-    return decrypt_object.decrypt_message()
-
-### DO NOT MODIFY THIS METHOD ###
-
 def main():
-    ''' This method is provided to handle testcases'''
-    print(decrypt_story())
+    '''
+    Main method
+    '''
+    ciphertext = CiphertextMessage(input())
+    print(ciphertext.decrypt_message())
 
 if __name__ == '__main__':
     main()
