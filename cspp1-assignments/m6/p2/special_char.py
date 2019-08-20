@@ -10,7 +10,7 @@ def main():
     '''
     str_input = input()
     str_output = ''
-    for _ in range(str_input):
+    for _ in str_input:
     	if _ in '!@#$%^&*':
     		str_output += " "
     	else:
