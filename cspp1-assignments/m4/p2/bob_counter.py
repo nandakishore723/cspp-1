@@ -9,8 +9,8 @@ def main():
     in s.'''
     string = input()
     string_to_find = 'bob'
-    t_c = 0
-    for i in range(len(string)-2):
+    count = 0
+    for i in range(string):
         b_c = 0
         n_r = 0
         o_r = i
@@ -19,7 +19,7 @@ def main():
             n_r = n_r + 1
             o_r = o_r + 1
         if b_c == 3:
-            t_c = t_c + 1
-    print(t_c)
+            count = count + 1
+    print(count)
 if __name__ == "__main__":
     main()
