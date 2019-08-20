@@ -9,11 +9,13 @@ def main():
     Read string from the input, store it in variable str_input.
     '''
     str_input = input()
+    str_output = ''
     for _ in range(str_input):
     	if _ in '!@#$%^&*':
-    		print(" ")
+    		str_output += " "
     	else:
-    		print(_)
+    		str_output += _ 
+    	print(str_output)
     #print(str_input.Replace("!, @, #, $, %, ^, &, *", " "))
 if __name__ == "__main__":
     main()
