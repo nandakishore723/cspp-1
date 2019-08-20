@@ -9,7 +9,7 @@ def main():
     Read string from the input, store it in variable str_input.
     '''
     str_input = input()
-    for _ in range(input()):
+    for _ in range(str_input):
     	if _ in '!@#$%^&*':
     		print(" ")
     	else:
