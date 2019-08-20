@@ -10,7 +10,7 @@ def main():
     string = input()
     string_to_find = 'bob'
     count = 0
-    for i in range(string):
+    for i in range(len(string)):
         b_c = 0
         n_r = 0
         o_r = i
