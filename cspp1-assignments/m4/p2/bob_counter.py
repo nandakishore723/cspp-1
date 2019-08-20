@@ -9,9 +9,10 @@ def main():
 	#print(string)
 	count = 0
 	for i in range(len(string)-2):
-		if i in 'bob':
-			count = count + 1
-		print(count)
+		print(i)
+		# if i in 'bob':
+		# 	count = count + 1
+		# print(count)
 
     # string = input()
     # string_to_find = 'bob'
