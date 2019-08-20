@@ -15,7 +15,7 @@ def main():
     		str_output += " "
     	else:
     		str_output += _ 
-    	print(str_output)
+    print(str_output)
     #print(str_input.Replace("!, @, #, $, %, ^, &, *", " "))
 if __name__ == "__main__":
     main()
