@@ -9,9 +9,6 @@ def main():
     Read string from the input, store it in variable str_input.
     '''
     str_input = input()
-    l = len(str_input)
-    s1 = ''
-    if 
-    	print(s1)
+    print(str_input.Replace("!, @, #, $, %, ^, &, *", " "))
 if __name__ == "__main__":
     main()
