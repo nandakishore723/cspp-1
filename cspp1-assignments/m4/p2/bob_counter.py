@@ -7,12 +7,12 @@ Number of times bob occurs is: 2'''
 def main():
 	string = input()
 	#print(string)
-	#count = 0
+	string_to_find = 'bob'
+	count = 0
 	for i in range(len(string)-2):
-		print(i)
-		# if i in 'bob':
-		# 	count = count + 1
-		# print(count)
+		if i in string_to_find:
+			count = count + 1
+		print(count)
 
     # string = input()
     # string_to_find = 'bob'
