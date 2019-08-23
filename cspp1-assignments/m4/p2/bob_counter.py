@@ -7,7 +7,7 @@ import re
 def main():
     '''Write a program that prints the number of times the string 'bob' occurs
     in s.'''
-    string = input()
+    #string = input()
     count = 0
     # string_to_find = 'bob'
     # count = 0
@@ -22,8 +22,8 @@ def main():
     #     if b_c == 3:
     #         count = count + 1
     # print(count)
-    p = re.compile('(bob)*')
-    if p.findall(string):
+    p = re.compile('bob')
+    if p.findall(input()):
         count += 1
     print(count)
 if __name__ == "__main__":
