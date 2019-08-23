@@ -24,7 +24,7 @@ the string s.
     # 	if i in 'aeiou':
     # 		count = count + 1
     # print(count)
-    x = s.count('a','e','i','o','u')
+    x = s.count('aeiou')
     print(x)
 if __name__ == "__main__":
     main()
