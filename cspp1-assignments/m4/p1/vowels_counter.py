@@ -25,5 +25,6 @@ the string s.
     # 		count = count + 1
     # print(count)
     x = s.count('a','e','i','o','u')
+    print(x)
 if __name__ == "__main__":
     main()
