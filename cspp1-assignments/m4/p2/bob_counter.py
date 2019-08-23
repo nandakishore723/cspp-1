@@ -25,6 +25,6 @@ def main():
     p = re.compile('bob')
     if p.findall(string):
         count += 1
-
+    print(count)
 if __name__ == "__main__":
     main()
