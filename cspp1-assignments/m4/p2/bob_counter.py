@@ -22,7 +22,7 @@ def main():
     #     if b_c == 3:
     #         count = count + 1
     # print(count)
-    p = re.compile('bob')
+    p = re.compile('(bob)*')
     if p.findall(string):
         count += 1
     print(count)
