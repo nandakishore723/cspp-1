@@ -20,10 +20,10 @@ the string s.
     # print(s_b)
     s = input()
     count = 0
-    for i in s:
-    	if i in 'aeiou':
-    		count = count + 1
-    print(count)
-
+    # for i in s:
+    # 	if i in 'aeiou':
+    # 		count = count + 1
+    # print(count)
+    x = s.count('a','e','i','o','u')
 if __name__ == "__main__":
     main()
